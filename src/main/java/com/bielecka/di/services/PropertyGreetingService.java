@@ -3,11 +3,11 @@ package com.bielecka.di.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingSeviceImpl implements GreetingService {
+public class PropertyGreetingService implements GreetingService {
 
 	@Override
 	public String sayGreeting() {
-		return "Hello World!";
+		return "Hello World - Property";
 	}
 
 }

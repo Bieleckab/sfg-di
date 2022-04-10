@@ -3,7 +3,7 @@ package com.bielecka.di.controllers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.bielecka.di.services.GreetingSeviceImpl;
+import com.bielecka.di.services.ContructorGreetingSevice;
 
 class SetterInjectedControllerTest {
 
@@ -12,7 +12,7 @@ class SetterInjectedControllerTest {
 	@BeforeEach
 	void setUp() {
 		controller = new SetterInjectedController();
-		controller.setGreetingService(new GreetingSeviceImpl());
+		controller.setGreetingService(new ContructorGreetingSevice());
 	}
 
 	@Test
